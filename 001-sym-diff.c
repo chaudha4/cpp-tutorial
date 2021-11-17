@@ -114,5 +114,9 @@ int main() {
     int *resp = sym_diff(arr1, len1, arr2, len2, resp_len);
 
     parray(resp, *resp_len);
+
+    // free the memory - We own the memory 
+    free(resp);
+
     return 0;
 }
