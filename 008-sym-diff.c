@@ -17,7 +17,7 @@
 #include <stdlib.h>
 
 
-// rm ./a.out; gcc 001-sym-diff.c; ./a.out
+// rm ./a.out; gcc 008-sym-diff.c; ./a.out
 
 // Utility to print array. There is no easy way to print entire array !!
 int parray(int arr[], size_t len) {
