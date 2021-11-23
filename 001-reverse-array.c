@@ -13,16 +13,18 @@
 
 #include <stdio.h>
 
+#define LEN(x) sizeof(x)/sizeof(x[0])
 
 int printreverse(const int arr[], size_t len) {
     printf("\n");
     for (int ii=len-1; ii>=0; ii-- ) {
-        printf("%d\t", arr[ii]);
+        printf("%d,", arr[ii]);
     }
+    printf("\n");
 }
 
 int main() {
     printf("\nStart\n");
     int arr1[] = {22, 11, 33, 3, 6, 88};
-    printreverse(arr1, sizeof(arr1)/sizeof(int));
+    printreverse(arr1, LEN(arr1));
 }

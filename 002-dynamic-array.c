@@ -16,7 +16,7 @@
 #include <stdlib.h>
 
 
-int create_arr(int** arr1, size_t num) {
+int create_arr(int** const arr1, const size_t num) {
 
     printf("Entering create_arr\n");
 
@@ -59,7 +59,7 @@ void main() {
     {
         printf("%d-", arr1[i]);
     }
-
+    printf("\n");
     return;
 }
 
