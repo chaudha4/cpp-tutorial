@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// rm ./a.out; gcc 000-practice.c; ./a.out
 
 void func1(int ii) {
     printf("%d\n", ii);
