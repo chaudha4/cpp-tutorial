@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// rm ./a.out; gcc 000-practice.c; ./a.out
+// rm ./a.out; gcc 006-linked-list.c; ./a.out
 
 // forward declaration
 typedef struct node_struct node;

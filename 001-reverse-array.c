@@ -25,6 +25,6 @@ int printreverse(const int arr[], size_t len) {
 
 int main() {
     printf("\nStart\n");
-    int arr1[] = {22, 11, 33, 3, 6, 88};
+    int arr1[] = {22, 11, 33, 3, 6, 88, 99};
     printreverse(arr1, LEN(arr1));
 }
