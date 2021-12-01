@@ -12,10 +12,41 @@ char* getName1() {
     return name;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 char* getName2() {
     char* name = "Abhishek";
     return name;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 char* getName3() {
     char* ret;
@@ -23,12 +54,40 @@ char* getName3() {
     return ret;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 char* getName4() {
     char* name = "Abhishek";
     char* ret = (char*) malloc(sizeof(name));
     strcpy(ret, "Abhishek");
     return ret;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Driver Code
 void main(void) {
