@@ -1,60 +1,45 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+/**
+ * @file 000-practice.c
+ * @author Abhishek Chaudhary
+ * @brief TO run - rm ./a.out; gcc 000-practice.c; ./a.out
+ * @version 0.1
+ * @date 2021-12-01
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 // rm ./a.out; gcc 000-practice.c; ./a.out
 
-// forward declaration
-typedef struct node_struct node;
+#include <stdio.h>
 
+#define LEN(x) sizeof(x) / sizeof(x[0])
 
-typedef struct node_struct
-{
-    int data;
-    node* next;
-} node;
+int main() {
+    
+    int arr1[] = {10, 9, 11, 1};
 
-node* root = NULL;
-node* last = NULL;
-
-node* add(int ii) {
-    node* n = (node*) malloc(sizeof(node));
-    n->data = ii;
-    n->next = NULL;    
-
-    if (root == NULL)
-    {
-        last = n;
-        root = n;
-    } else {
-        last->next = n;
-        last = n;
-    }
-    return n;
-}
-
-void pnode() {
+    int ll = LEN(arr1);
+     for (size_t i = 0; i < ll; i++)
+     {
+         printf("%i\t", arr1[i]);
+         for (size_t j = 0; j <  ll; j++)
+         {
+             if ( arr1[i] <  arr1[j] ) {
+                 int kk = arr1[i];
+                 arr1[i] = arr1[j];
+                 arr1[j] = kk;
+             }
+         }
+         
+     }
+     
     printf("\n");
-    if (root == NULL) {
-        printf("Empty Linked List\n");
-        return;
-    }
-
-    node* n = root;
-    while (n)
+    for (size_t i = 0; i < ll; i++)
     {
-        printf("%i\t", n->data);
-        n = n->next;
+        printf("%i\t", arr1[i]);
     }
     printf("\n");
-}
 
-// driver
-void main() {
-    printf("Started\n");
-    add(10);
-    add(12);
-    add(9);
-    pnode();
 
 }
